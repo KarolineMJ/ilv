@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="checkmarks">
+        <p>&#10003; 14 dages fortrydelsesret</p>
+        <p>&#10003; Ingen binding</p>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/ill-vid.png" alt="">
+        </div>
+
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
+            <li><a href="#">Link #3</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="mainContent">
+        <a href="javascript:history.back()">&#8637; gå tilbage</a>
+
+
+        <h2>Valgt tilbud</h2>
+        <div class="valgtTilbud">
+            <div class="magasin">
+                <img class="firstmag" src="img/mini-magasin1.jpg" alt="minimag">
+                <img class="secondmag" src="img/mini-magasin2.jpg" alt="minimag">
+            </div>
+            <div class="powerbank">
+                <img src="img/powerbank4.png" alt="powerbank">
+            </div>
+        </div>
+
+        <form action="">
+            <div class="grid">
+                <div>
+                    <label for="firstname">Fornavn* </label>
+                    <input type="text" name="firstname" id="firstname" required placeholder="Dit fornavn">
+                </div>
+
+                <div>
+                    <label for="lastname">Efternavn* </label>
+                    <input type="text" name="lastname" id="lastname" required placeholder="Dit efternavn">
+
+                </div>
+
+                <div>
+                    <label for="adress">Adresse* </label>
+                    <input type="text" name="adress" id="adress" required placeholder="Din adresse">
+
+                </div>
+                <div class="postnr">
+                    <label for="postnr">Postnr. & by* </label>
+                    <input type="text" name="postnr" id="postnr" required placeholder="Postnr." maxlength="4">
+                    <input type="text" name="by" id="by" required placeholder="By">
+
+                </div>
+
+
+                <div>
+                    <label for="email">Email* </label>
+                    <input type="text" name="email" id="email" required placeholder="Din e-mailadresse">
+
+                </div>
+
+                <div>
+                    <label for="email">Bekræft email </label>
+                    <input type="text" name="email" id="email" required placeholder="Din e-mailadresse">
+
+                </div>
+
+                <div>
+                    <label for="phone">Telefonnr. </label>
+                    <input title="Only danish phone numbers" type="tel" name="phone" pattern="(\+45 ?)?([0-9]{2} ?){4}"
+                        placeholder="Phonenumber">
+                    <div></div>
+                    <div class="validated"></div>
+                </div>
+            </div>
+        </form>
+
+        <div class="betalingsform">
+            <a href="creditcard.html">Vælg betalingsmetode</a>
+        </div>
+
+
+        <div class="footer">
+            <h2>Sikker betaling med</h2>
+            <img src="img/icon-payment-options-da.png" alt="payment options">
+        </div>
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
