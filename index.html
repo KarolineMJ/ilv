@@ -20,7 +20,7 @@
             <img src="img/ill-vid.png" alt="">
         </div>
 
-        <div class="container" onclick="myFunction(this)">
+        <div class="container">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -30,17 +30,37 @@
     </div>
 
 
-    <nav>
+    <nav class="navigation">
         <ul>
-            <li><a href="#">Link #1</a></li>
-            <li><a href="#">Link #2</a></li>
-            <li><a href="#">Link #3</a></li>
+            <li><a href="#">Hjem</a></li>
+            <li><a href="#">Anmeldelser</a></li>
+            <li><a href="#">Andre produkter</a></li>
         </ul>
     </nav>
 
     <div class="slider">
-        <img src="img/powerbank-blad.jpg" alt="blad">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/powerbank-blad.jpg" style="width:100%">
+            </div>
 
+            <div class="mySlides fade">
+                <img src="img/powerbank1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/powerbank2.jpg" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+        <div class="dots">
+            <div style="text-align:center">
+                <span class="dot d1"></span>
+                <span class="dot"></span>
+                <span class="dot d3"></span>
+            </div>
+        </div>
 
 
         <div class="circle">
@@ -61,7 +81,7 @@
                 <li>To numre af Illustreret Videnskab</li>
                 <li>Stærk Powerbank i flot design</li>
                 <li>Digital adgang til de seneste 12 numre af bladet</li>
-                <li>Eksklusiv adgang til Moreshop</li>
+                <li>Eksklusiv adgang til <a href="#">Moreshop</a></li>
             </ul>
         </div>
 
@@ -71,7 +91,7 @@
 
         <div class="radios">
             <div class="radio1 radioBox">
-                <input type="radio" name="offer" class="offer" checked>
+                <input type="radio" name="offer" class="offer">
                 <label for="offer">2 nr. for 49,50 kr. </label>
             </div>
 
@@ -90,12 +110,52 @@
                 <label for="offer">12 nr. for 249,50 kr. </label>
             </div>
         </div>
+        <div class="betalingsform myBtn">
+            <a href="#">Tilføj til kurv</a>
+        </div>
+
 
         <div class="buyButton">
             <a href="form.html"><img src="img/cart-white.png" alt=""></a>
 
         </div>
 
+
+        <div class="details">
+
+            <p>Den smarte Stone powerbank fylder ikke meget, hvilket gør den perfekt til at
+                have med i lommen når
+                du
+                skal på stranden, til festival eller blot har brug for ekstra strøm i en travl
+                hverdag.<span id="dots">...</span>
+                <span id="more">Stone powerbank er udstyret med to strømudgange, hvor den ene
+                    udgang passer perfekt
+                    til
+                    at
+                    oplade din iPhone og den anden passer til højtalere, tablets, kameraer
+                    eller lignende. For at
+                    benytte
+                    powerbanken stikker du blot din enheds USB kabel ind i powerbanken, og
+                    efterfølgende tilslutter
+                    din
+                    enhed.
+                    Den store kapacitet på 6000 mAh gør at du altid vil have to hele
+                    opladninger til din telefon
+                    med på
+                    farten og ved hjælp af LED-indikatoren, kan du løbende, se hvor meget strøm
+                    du har tilbage.
+                    Medfølger
+                    – 1 stk. Stone powerbank
+                    – 1 stk. USB-kabel til opladning af powerbank</span></p>
+            <button onclick="myFunction()" class="myBtn">Read more</button>
+
+        </div>
+
+        <div class="review">
+            <h2>Anbefaling</h2>
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p>BEST PRODUCT EVER!!!</p>
+        </div>
 
         <div class="footer">
             <h2>Sikker betaling med</h2>
