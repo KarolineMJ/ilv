@@ -334,7 +334,21 @@ input[type='radio']:checked:after {
     text-decoration: none; }
 
 .tilføj {
+  width: 100%;
   background-color: #9b9b9b; }
+
+.shake {
+  animation: shaking 1s; }
+
+@keyframes shaking {
+  10%, 90% {
+    transform: translateX(-1px); }
+  20%, 80% {
+    transform: translateX(2px); }
+  30%, 50%, 70% {
+    transform: translateX(-4px); }
+  40%, 60% {
+    transform: translateX(4px); } }
 
 .radios {
   margin-bottom: 2.6rem; }
@@ -342,6 +356,11 @@ input[type='radio']:checked:after {
 /* general style */
 .bigcontainer {
   margin: auto; }
+  .bigcontainer input {
+    width: 100%; }
+
+q {
+  quotes: "„" "“" "‚" "‘"; }
 
 .cityform {
   display: grid;
@@ -355,13 +374,12 @@ input[type='radio']:checked:after {
 .box input {
   font-size: 1.3em;
   padding: 0.4em;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   display: block;
   border: 1px solid #e1e1e1;
   border-left: 3px solid #81d742;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 5px;
   height: 37px; }
 
 .box input:focus {
@@ -379,10 +397,14 @@ input[type='radio']:checked:after {
 /* active  */
 .box input:focus ~ label,
 .box input:valid ~ label {
-  top: -20px;
+  top: -26px;
   font-size: 15px;
   color: #81d742;
   border-left: none; }
+
+.obligatorisk {
+  color: grey;
+  margin-bottom: 1.7rem; }
 
 .details {
   margin: auto; }

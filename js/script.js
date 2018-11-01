@@ -83,6 +83,12 @@ function changeColor() {
     }
 }
 
+function shakeCart() {
+    let cart = document.querySelector(".buyButton a img");
+    cart.classList.toggle("shake");
+    console.log("clicked");
+}
+
 
 let slideIndexB = 1;
 showDivs(slideIndexB);
