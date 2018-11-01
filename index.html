@@ -17,7 +17,7 @@
     </div>
     <div class="navbar">
         <div class="logo">
-            <img src="img/ill-vid.png" alt="">
+            <a href="index.html"><img src="img/ill-vid.png" alt=""></a>
         </div>
 
         <div class="container">
@@ -32,9 +32,9 @@
 
     <nav class="navigation">
         <ul>
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Anmeldelser</a></li>
-            <li><a href="#">Andre produkter</a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#PBReview">Anmeldelser</a></li>
+            <li><a href="#tilbud">Andre produkter</a></li>
         </ul>
     </nav>
 
@@ -49,7 +49,7 @@
             </div>
 
             <div class="mySlides fade">
-                <img src="img/powerbank2.jpg" style="width:100%">
+                <img src="img/powerbank3.jpg" style="width:100%">
             </div>
 
         </div>
@@ -76,10 +76,16 @@
 
         <div class="firstText">
             <h1><b>Illustreret Videnskab</b> + Stone powerbank</h1>
-
+            <div class="stars">
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p class="greystars">&#9733;</p>
+            </div>
             <ul>
-                <li>To numre af Illustreret Videnskab</li>
-                <li>Stærk Powerbank i flot design</li>
+                <li>To numre af <a href="#aboutMag">Illustreret Videnskab</a></li>
+                <li>Stærk <a href="#aboutPower">Powerbank</a> i flot design</li>
                 <li>Digital adgang til de seneste 12 numre af bladet</li>
                 <li>Eksklusiv adgang til <a href="#">Moreshop</a></li>
             </ul>
@@ -91,8 +97,8 @@
 
         <div class="radios">
             <div class="radio1 radioBox">
-                <input type="radio" name="offer" class="offer">
-                <label for="offer">2 nr. for 49,50 kr. </label>
+                <input type="radio" name="offer" class="offer" id="offer1" onClick="changeColor();">
+                <label for="offer1">2 nr. for 49,50 kr. </label>
             </div>
 
 
@@ -100,19 +106,21 @@
                 <div class="mostPopular">
                     <span class="popular-tag">Mest populære!</span></div>
                 <div class="radio2 radioBox popular">
-                    <input type="radio" name="offer" class="offer">
-                    <label for="offer ">6 nr. for 149,50 kr.</label>
+                    <input type="radio" name="offer" class="offer" id="offer2" onClick="changeColor();">
+                    <label for="offer2">6 nr. for 149,50 kr.</label>
                 </div>
             </div>
 
             <div class="radio1 radioBox">
-                <input type="radio" name="offer" class="offer">
-                <label for="offer">12 nr. for 249,50 kr. </label>
+                <input type="radio" name="offer" class="offer" id="offer3" onClick="changeColor();">
+                <label for="offer3">12 nr. for 299,50 kr. </label>
             </div>
         </div>
-        <div class="betalingsform myBtn">
-            <a href="#">Tilføj til kurv</a>
-        </div>
+        <a href="#">
+            <div class="betalingsform tilføj">
+                Tilføj til kurv
+            </div>
+        </a>
 
 
         <div class="buyButton">
@@ -121,51 +129,264 @@
         </div>
 
 
-        <div class="details">
+        <div class="details" id="aboutPower">
+            <h2>Stone powerbank</h2>
 
             <p>Den smarte Stone powerbank fylder ikke meget, hvilket gør den perfekt til at
-                have med i lommen når
-                du
-                skal på stranden, til festival eller blot har brug for ekstra strøm i en travl
-                hverdag.<span id="dots">...</span>
-                <span id="more">Stone powerbank er udstyret med to strømudgange, hvor den ene
-                    udgang passer perfekt
-                    til
-                    at
-                    oplade din iPhone og den anden passer til højtalere, tablets, kameraer
-                    eller lignende. For at
-                    benytte
-                    powerbanken stikker du blot din enheds USB kabel ind i powerbanken, og
-                    efterfølgende tilslutter
-                    din
-                    enhed.
-                    Den store kapacitet på 6000 mAh gør at du altid vil have to hele
+                have med i lommen når du skal på stranden, til festival eller blot har brug for ekstra strøm i en travl
+                hverdag.<span id="dots">..</span>
+                <div id="more">Stone powerbank er udstyret med to strømudgange, hvor den ene
+                    udgang passer perfekt til at oplade din iPhone og den anden passer til højtalere, tablets, kameraer
+                    eller lignende.
+                    <br><br>For at benytte powerbanken stikker du blot din enheds USB kabel ind i
+                    powerbanken, og efterfølgende tilslutter din enhed.
+                    <br><br>Den store kapacitet på 6000 mAh gør at du altid vil have to hele
                     opladninger til din telefon
-                    med på
-                    farten og ved hjælp af LED-indikatoren, kan du løbende, se hvor meget strøm
+                    med på farten og ved hjælp af LED-indikatoren, kan du løbende, se hvor meget strøm
                     du har tilbage.
-                    Medfølger
-                    – 1 stk. Stone powerbank
-                    – 1 stk. USB-kabel til opladning af powerbank</span></p>
-            <button onclick="myFunction()" class="myBtn">Read more</button>
+                    <br><br>
+                    Medfølger:
+
+                    <ul>
+                        <li>1 stk. Stone powerbank</li>
+                        <li>1 stk. USB-kabel til opladning af powerbank</li>
+                    </ul>
+                </div>
+            </p>
+
+            <div onclick="readMore()" id="readMore" class="readMore">Read more &#x25BC;</div>
+
+        </div>
+    </div>
+
+
+    <div class="reviews" id="PBReview">
+
+        <!-- Review no 1 -->
+        <div class="Review">
+            <div class="reviewsName">
+                <div class="picture">
+                    <h3>KMJ</h3>
+                </div>
+                <h4 class="namee">Karoline Meyer-Jacobsen</h4>
+            </div>
+            <div class="stars2">
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+            </div>
+            <p class="reviewText">
+                Lækker powerbank der holder god strøm, passer lige ned i lommen. Super lækkert og tidsløst
+                design,
+                der er meget neutralt i sit udseende.
+            </p>
 
         </div>
 
-        <div class="review">
-            <h2>Anbefaling</h2>
-            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p>BEST PRODUCT EVER!!!</p>
+        <!-- review no 2 -->
+        <div class="Review">
+            <div class="reviewsName">
+                <div class="picture">
+                    <h3>LA</h3>
+                </div>
+                <h4 class="namee">Larisa Ailisoaie</h4>
+            </div>
+            <div class="stars2">
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+            </div>
+            <p class="reviewText">
+                Super handi lille powerbank, med neutralt look, der er nem at have med på farten. Nem at have
+                med i
+                tasken. Anbefaler den gerne til en god ven.
+            </p>
+
         </div>
 
-        <div class="footer">
-            <h2>Sikker betaling med</h2>
-            <img src="img/icon-payment-options-da.png" alt="payment options">
+
+        <!-- Review no 3 -->
+        <div class="Review">
+            <div class="reviewsName">
+                <div class="picture">
+                    <h3>TKG</h3>
+                </div>
+                <h4 class="namee">Tiril Key Grimsrud</h4>
+            </div>
+            <div class="stars2">
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p>&#9733;</p>
+                <p class="greystars">&#9733;</p>
+                <p class="greystars">&#9733;</p>
+            </div>
+            <p class="reviewText">
+                Fin lille powerbank, holder dog kun strøm i lidt tid. Ville være bedre hvis den holdt
+                længere...
+                Mangler lidt ekstra for at få 4 stjerner.
+            </p>
+
+        </div>
+        <button class="arrow2 left2" onclick="plusDivs2(-1)">&#10094;</button>
+        <button class=" arrow2 right2" onclick="plusDivs2(1)">&#10095;</button>
+    </div>
+    </div>
+    <div class="mainContent">
+        <div class="details" id="aboutMag">
+            <h2>Illustreret Videnskab</h2>
+            <p>Fra det inderste dna i cellen over menneskets utrolige hjerne til universets fjerneste galakser.
+                Illustreret Videnskab forklarer hele den fascinerende verden, du lever i.<span id="dots2">..</span>
+                <h3 id="modalButton">Se forhåndsvisning her &#10095;</h3>
+                <div id="more2">Som læser får du:
+
+                    <ul>
+                        <li>Et troværdigt filter så du altid er opdateret med relevant viden </li>
+                        <li>En kontinuerlig rejse til forskernes frontlinje</li>
+                        <li>Opdatering om de største videnskabelige gennembrud</li>
+                        <li>Udfyldt eventuelle huller i din paratviden</li>
+                    </ul>
+
+                    <br><b>Skal du med på opdagelsesrejsen?
+                    </b>
+                    <br><br>Med venlig hilsen
+                    <br><br><b>Chefredaktør</b>
+                    <br>Sebastian Relster
+                </div>
+            </p>
+            <div onclick="readMore2()" id="readMore2" class="readMore">Read more &#x25BC;</div>
+
         </div>
 
     </div>
 
 
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <div class="previewBox">
+
+                <span class="close">&times;</span>
+                <h2 class="modalTitle">Illustreret Videnskab</h2>
+                <br>
+                <div class="preview">
+                    <img src="img/mini-magasin1.jpg">
+                    <p class="numbering">1/2</p>
+                </div>
+
+                <div class="preview">
+                    <img src="img/mini-magasin2.jpg">
+                    <p class="numbering">2/2</p>
+                </div>
+                <br> <br>
+
+
+                <button class="arrowPreview leftPreview" onclick="plusPreview(-1)">&#10094;</button>
+                <button class=" arrowPreview rightPreview" onclick="plusPreview(1)">&#10095;</button>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="review" id="tilbud">
+
+        <h2>Andre tilbud</h2>
+
+        <!-- AT - andre tilbud -->
+        <div class=bigBoxAT>
+
+            <div class="boxAT">
+                <img src="img/2.jpg" style="width:100%">
+                <div class="ATtext">
+                    <h3>Få 2 nr. af Illustreret Videnskab +
+                    </h3>
+                    <h4>IP-overvågningskamera</h4>
+                </div>
+                <div class="sparAT">
+                    <h3>Spar<br> 677 kr.</h3>
+                </div>
+            </div>
+
+            <div class="boxAT">
+                <img src="img/1.jpg" style="width:100%">
+                <div class="ATtext">
+                    <h3>Få 2 nr. af Illustreret Videnskab +
+                    </h3>
+                    <h4>Vinyl Tech Bluetooth hovedtelefoner</h4>
+                </div>
+                <div class="sparAT">
+                    <h3>Spar<br> 497 kr.</h3>
+                </div>
+            </div>
+
+
+
+            <div class="boxAT">
+                <img src="img/3.jpg" style="width:100%">
+                <div class="ATtext">
+                    <h3>Få 2 nr. af Illustreret Videnskab +
+                    </h3>
+                    <h4>COMO ur</h4>
+                </div>
+                <div class="sparAT">
+                    <h3>Spar<br> 587 kr.</h3>
+                </div>
+            </div>
+
+            <div class="boxAT">
+                <img src="img/4.jpg" style="width:100%">
+                <div class="ATtext">
+                    <h3>Få 2 nr. af Illustreret Videnskab +
+                    </h3>
+                    <h4>Sonitum højttaler</h4>
+                </div>
+                <div class="sparAT">
+                    <h3>Spar<br> 587 kr.</h3>
+                </div>
+            </div>
+
+            <button class="arrow left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class=" arrow right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <h2>Sikker betaling med</h2>
+        <img src="img/icon-payment-options-da.png" alt="payment options">
+    </div>
+
+
+
+
+    <footer>
+
+        <h4> Bonnier Publications International A/S</h4>
+
+        <div class="companyInfo">
+            Kundeservice postboks 413<br> 0900 København C<br> CVR. 977041066<br>
+            Telefon: 39 10 30 00<br></div>
+        <h4> Kundeservice program</h4>
+        <div class="program">
+            <div class=""> Man-tors:<br> Fredag:<br></div>
+            <div class=""> 9.00-16.00 <br> 9.00-14.30<br></div>
+        </div>
+        <br>
+        <div class="SoMe">
+            <img src="img/Facebook.svg" alt="facebook">
+            <img src="img/Intsagram.svg" alt="instagram">
+            <img src="img/YouTube.svg" alt="youtube">
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 
 </body>

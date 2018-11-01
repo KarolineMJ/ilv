@@ -17,7 +17,7 @@
     </div>
     <div class="navbar">
         <div class="logo">
-            <img src="img/ill-vid.png" alt="">
+            <a href="index.html"><img src="img/ill-vid.png" alt=""></a>
         </div>
 
         <div class="container">
@@ -32,7 +32,7 @@
 
     <nav class="navigation">
         <ul>
-            <li><a href="#">Hjem</a></li>
+            <li><a href="index.html">Hjem</a></li>
             <li><a href="#">Anmeldelser</a></li>
             <li><a href="#">Andre produkter</a></li>
         </ul>
@@ -44,6 +44,14 @@
 
         <div class="backbtn">
             <a href="index.html">&#8637; gå tilbage</a>
+        </div>
+
+        <div class="progressContainer">
+            <ul class="progressbar">
+                <li class="activeStep"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
 
         <h2>Valgt tilbud</h2>
@@ -60,7 +68,7 @@
             </div>
         </div>
         <div>
-            <h3>2 magasiner og en powerbank for 49,95kr.</h3>
+            <h3>2 magasiner og en powerbank for 49,50kr.</h3>
         </div>
 
         <div class="facebookLogin">
@@ -68,7 +76,7 @@
             <h2>Or</h2>
         </div>
 
-
+        <p>Felter markeret med * er obligatoriske</p>
         <form>
             <div class="bigcontainer">
 
@@ -76,26 +84,26 @@
                     <input type="text" id="firstName" required>
                     <span class="highlight"></span>
                     <span class=""></span>
-                    <label for="firstName">Fornavn</label>
+                    <label for="firstName">Fornavn*</label>
                 </div>
                 <div class="box">
                     <input type="text" id="lastName" required>
                     <span class="highlight"></span>
                     <span class=""></span>
-                    <label for="lastName">Efternavn</label>
+                    <label for="lastName">Efternavn*</label>
                 </div>
 
                 <div class="box">
                     <input type="text" id="email" title="Brug venligst en email adresse." required>
                     <span class="highlight"></span>
                     <span class=""></span>
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                 </div>
                 <div class="box">
                     <input type="text" id="confirmEmail" required>
                     <span class="highlight"></span>
                     <span class=""></span>
-                    <label for="confirmEmail">Bekræft Email</label>
+                    <label for="confirmEmail">Bekræft Email*</label>
                 </div>
                 <div class="box">
                     <input type="text" id="phone" required>
@@ -111,20 +119,20 @@
                         <input type="text" id="address" required>
                         <span class="highlight"></span>
                         <span class=""></span>
-                        <label for="address">Adresse</label>
+                        <label for="address">Adresse*</label>
                     </div>
                     <div class="cityform">
                         <div class="box" id="zipGroup">
                             <input type="text" id="zipCode" required>
                             <span class="highlight"></span>
                             <span class=""></span>
-                            <label for="zipCode">Postnr.</label>
+                            <label for="zipCode">Postnr.*</label>
                         </div>
                         <div class="box" id="city">
                             <input type="text" id="cityBox" required>
                             <span class="highlight"></span>
                             <span class=""></span>
-                            <label for="city" id="cityLabel">By</label>
+                            <label for="city" id="cityLabel">By*</label>
                         </div>
                     </div>
                 </div>
@@ -139,7 +147,7 @@
 
 
 
-        <div class="betalingsform myBtn">
+        <div class="betalingsform">
             <a href="creditcard.html">Vælg betalingsmetode</a>
         </div>
 
@@ -147,7 +155,25 @@
 
     </div>
 
+    <footer>
 
+        <h4> Bonnier Publications International A/S</h4>
+
+        <div class="companyInfo">
+            Kundeservice postboks 413<br> 0900 København C<br> CVR. 977041066<br>
+            Telefon: 39 10 30 00<br></div>
+        <h4> Kundeservice program</h4>
+        <div class="program">
+            <div class=""> Man-tors:<br> Fredag:<br></div>
+            <div class=""> 9.00-16.00 <br> 9.00-14.30<br></div>
+        </div>
+        <br>
+        <div class="SoMe">
+            <img src="img/Facebook.svg" alt="facebook">
+            <img src="img/Intsagram.svg" alt="instagram">
+            <img src="img/YouTube.svg" alt="youtube">
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 
